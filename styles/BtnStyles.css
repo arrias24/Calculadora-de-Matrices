@@ -1,3 +1,5 @@
+@import "./varStyles.css";
+
 .btn {
   display: inline-block;
   height: 1vw;
@@ -8,22 +10,62 @@
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
   font-weight: bold;
+  border-radius: 0.5vw;
 
-  transition: all 1s ease;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .btn-input {
   border: 2px solid var(--color-blue);
-  border-radius: 0.5vw;
   background-color: var(--color-white);
-
   transition: all 1s ease;
 }
 
-.btn-input:hover {
-  background-color: var(--color-blue);
-  border: 2px solid var(--color-white);
-  color: var(--color-white);
-  transition: all 0.5s ease-in-out;
+.btn-output {
+  border: 2px solid var(--color-blue);
+  background-color: var(--color-white);
+}
+
+.btn-change {
+  width: 4vw;
+  padding: 0.2vw 0.5vw;
+  border-radius: 0.3vw;
+
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", serif;
+  font-weight: bold;
+
+  border: 2px solid var(--color-blue);
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-clear:hover{
+  background-color: var(--color-red);
+  border: 2px solid var(--color-border-red);
+  color: var(--color-white);
+}
+
+.btn-operation:hover{
+  background-color: #088886;
+  border: 2px solid #066b69;
+  color: var(--color-white);
+}
+
+.btn-calc:hover{
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-border-yellow);
+  color: var(--color-white);
+}
+
+.btn-change:hover {
+  border-color: var(--color-white);
+  color: var(--color-blue);
+  transition: all 0.5s ease-in-out;
 }

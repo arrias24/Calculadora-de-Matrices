@@ -1,0 +1,29 @@
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto Mono", serif;
+    font-weight: bold;
+  }
+
+.title-matriz{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Roboto Mono", serif;
+    font-weight: bold;
+  
+    position: absolute;
+    top: -50%;
+    left: 30%;
+}  
+  
+.title-matriz-r {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Roboto Mono", serif;
+    font-weight: bold;
+  
+    width: 11vw;
+    position: absolute;
+    top: calc(-50%);
+    left: calc(10%);
+  }

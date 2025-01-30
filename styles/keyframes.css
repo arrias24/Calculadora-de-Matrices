@@ -1,0 +1,23 @@
+@keyframes slide-back {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-15%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-next {
+    from {
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
