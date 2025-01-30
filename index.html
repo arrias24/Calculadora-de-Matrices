@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Matrices</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/clearStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
+        <div class="calc-input-container">
+            <div class="input-top-container">
+                <h2 class="title">Introduce los valores</h2>
+            </div>
 
+            <div class="input-medium-container">
+                <form class="form-input-container">
+                    <label for="title-matriz" class="title-matriz-a">Matriz A</label>
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                    <input type="number" class="input-cell"  maxlength="3">
+                </form>
+
+                <input type="number" class="input-control"  maxlength="3">
+                <button class="btn-change-matriz">Cambiar</button>
+            </div>
+
+            <div class="input-bottom-container">
+                <button class="btn-input">Sumar</button>
+                <button class="btn-input">Restar</button>
+                <button class="btn-input">Multiplicar</button>
+                <button class="btn-input">Determinante</button>
+                <button class="btn-input">Limpiar</button>
+                <button class="btn-input">Calcular</button>
+            </div>
+            
+        </div>
+        <div class="calc-output-container">
+            <div class="output-top-container">
+                <h2 class="title text-white">Observa el Resultado</h2>
+            </div>
+
+            <div class="output-medium-container">
+                <form class="form-output-container">
+                    <label for="title-matriz" class="title-matriz-r">Matriz Resultante</label>
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                    <input type="number" class="output-cell">
+                </form>
+            </div>
+
+            <div class="output-bottom-container">
+                <button class="btn-output">Limpiar</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
