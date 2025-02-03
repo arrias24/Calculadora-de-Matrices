@@ -7,4 +7,5 @@
 
 .m-b{
     display: none;
+    background-color: var(--color-yellow);
 }

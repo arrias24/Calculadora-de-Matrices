@@ -12,8 +12,8 @@
     font-weight: bold;
   
     position: absolute;
-    top: -50%;
-    left: 30%;
+    top: 5%;
+    left: 40%;
 }  
   
 .title-matriz-r {
@@ -24,6 +24,6 @@
   
     width: 11vw;
     position: absolute;
-    top: calc(-50%);
-    left: calc(10%);
+    top: 5%;
+    left: 27%;
   }

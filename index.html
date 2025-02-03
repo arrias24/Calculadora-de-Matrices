@@ -18,9 +18,8 @@
             </div>
 
             <div class="input-medium-container medium-container m-a" id="matriz-a">
-
+                <h3 class="title-matriz-a title-matriz text-white">Matriz A</h3>
                 <form class="form-input-container form-container" id="form-matriz-a">
-                    <label for="title-matriz" class="title-matriz-a title-matriz text-white">Matriz A</label>
                     <input type="number" class="input-cell cell"  maxlength="3">
                     <input type="number" class="input-cell cell"  maxlength="3">
                     <input type="number" class="input-cell cell"  maxlength="3">
@@ -32,14 +31,13 @@
                     <input type="number" class="input-cell cell"  maxlength="3">
                 </form>
 
-                <input type="number" class="input-control"  maxlength="3" id="num_matriz" value="2" min="2" max="5">
+                <input type="number" class="input-control"  maxlength="3" id="num_matriz_a" value="3" min="3" max="5">
                 <button class="btn-change" onclick="changeMatriz()">Cambiar</button>
             </div>
 
             <div class="input-medium-container medium-container m-b" id="matriz-b">
-
+                <h3 class="title-matriz-b title-matriz text-white">Matriz B</h3>
                 <form class="form-input-container form-container" id="form-matriz-b">
-                    <label for="title-matriz" class="title-matriz-b title-matriz text-white">Matriz B</label>
                     <input type="number" class="input-cell cell"  maxlength="3">
                     <input type="number" class="input-cell cell"  maxlength="3">
                     <input type="number" class="input-cell cell"  maxlength="3">
@@ -51,15 +49,15 @@
                     <input type="number" class="input-cell cell"  maxlength="3">
                 </form>
 
-                <input type="number" class="input-control" value="2" min="2" max="5">
+                <input type="number" class="input-control"  maxlength="3" id="num_matriz_b" value="3" min="3" max="5">
                 <button class="btn-change" onclick="changeMatriz()">Cambiar</button>
             </div>
 
 
             <div class="input-bottom-container bottom-container">
-                <button class="btn btn-input btn-operation">Sumar</button>
-                <button class="btn btn-input btn-operation">Restar</button>
-                <button class="btn btn-input btn-operation">Multiplicar</button>
+                <button class="btn btn-input btn-operation" onclick="sumar()">Sumar</button>
+                <button class="btn btn-input btn-operation" onclick="restar()">Restar</button>
+                <button class="btn btn-input btn-operation" onclick="multiplicar()">Multiplicar</button>
                 <button class="btn btn-input btn-operation">Determinante</button>
                 <button class="btn btn-input btn-clear" onclick="clearMatriz()">Limpiar</button>
                 <button class="btn btn-input btn-calc">Calcular</button>
@@ -72,8 +70,8 @@
             </div>
 
             <div class="output-medium-container medium-container" id="matriz-r">
+                <h3 class="title-matriz-r title-matriz">Matriz Resultante</h3>
                 <form class="form-output-container form-container" id="form-r">
-                    <label for="title-matriz" class="title-matriz-r">Matriz Resultante</label>
                     <input type="number" class="output-cell cell">
                     <input type="number" class="output-cell cell">
                     <input type="number" class="output-cell cell">
@@ -93,6 +91,8 @@
     </div>
     <script src="./scripts/changeMatriz.js"></script>
     <script src="./scripts/clearMatriz.js"></script>
-    <script src="./scripts/generateMatriz.js"></script>
+    <script src="./scripts/generateMatrizA.js"></script>
+    <script src="./scripts/generateMatrizB.js"></script>
+    <script src="./scripts/operations.js"></script>
 </body>
 </html>
