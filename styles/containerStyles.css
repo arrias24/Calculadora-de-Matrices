@@ -43,7 +43,7 @@
     flex-wrap: wrap;
     align-items: center;
   
-    width: 22vw;
+    width: 25vw;
     height: 10vw;
 }
 
@@ -53,15 +53,23 @@
 }
 
 .output-medium-container {
-    background-color: var(--color-white);
+    background-color: var(--color-gray);
     border: 2px solid var(--color-blue);
 }
 
 .calc-input-container {
-    background-color: var(--color-white);
+    background-color: var(--color-gray);
   }
 
 
 .calc-output-container {
     background-color: var(--color-blue);
   }
+
+.flex-active{
+    display: flex;
+}
+
+.flex-none{
+    display: none;
+}

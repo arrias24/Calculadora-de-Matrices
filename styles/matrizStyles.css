@@ -1,11 +1,11 @@
 @import "./varStyles.css";
 @import "./keyframes.css";
 
+
 .m-a{
-    display: flex;
+    background: linear-gradient(var(--color-border-blue), var(--color-blue));
 }
 
 .m-b{
-    display: none;
-    background-color: var(--color-yellow);
+    background: linear-gradient(var(--color-blue), var(--color-border-blue));
 }

@@ -12,12 +12,13 @@
 </head>
 <body>
     <div class="wrapper">
+        <p class="icon">~</p>
         <div class="calc-input-container calc-container">
             <div class="input-top-container">
                 <h2 class="title">Introduce los valores</h2>
             </div>
 
-            <div class="input-medium-container medium-container m-a" id="matriz-a">
+            <div class="input-medium-container medium-container m-a flex-active" id="matriz-a">
                 <h3 class="title-matriz-a title-matriz text-white">Matriz A</h3>
                 <form class="form-input-container form-container" id="form-matriz-a">
                     <input type="number" class="input-cell cell"  maxlength="3">
@@ -31,11 +32,12 @@
                     <input type="number" class="input-cell cell"  maxlength="3">
                 </form>
 
-                <input type="number" class="input-control"  maxlength="3" id="num_matriz_a" value="3" min="3" max="5">
+                <input type="number" class="input-matriz input-size"  maxlength="3" id="num_matriz_a" value="3">
+                <input type="number" class="input-matriz  input-escalar"  maxlength="3" id="num_escalar_a" value="0">
                 <button class="btn-change" onclick="changeMatriz()">Cambiar</button>
             </div>
 
-            <div class="input-medium-container medium-container m-b" id="matriz-b">
+            <div class="input-medium-container medium-container m-b flex-none" id="matriz-b">
                 <h3 class="title-matriz-b title-matriz text-white">Matriz B</h3>
                 <form class="form-input-container form-container" id="form-matriz-b">
                     <input type="number" class="input-cell cell"  maxlength="3">
@@ -49,18 +51,22 @@
                     <input type="number" class="input-cell cell"  maxlength="3">
                 </form>
 
-                <input type="number" class="input-control"  maxlength="3" id="num_matriz_b" value="3" min="3" max="5">
+                <input type="number" class="input-matriz input-size"  maxlength="3" id="num_matriz_b" value="3">
+                <input type="number" class="input-matriz input-escalar"  maxlength="3" id="num_escalar_b" value="0">
                 <button class="btn-change" onclick="changeMatriz()">Cambiar</button>
             </div>
 
 
             <div class="input-bottom-container bottom-container">
-                <button class="btn btn-input btn-operation" onclick="sumar()">Sumar</button>
-                <button class="btn btn-input btn-operation" onclick="restar()">Restar</button>
-                <button class="btn btn-input btn-operation" onclick="multiplicar()">Multiplicar</button>
-                <button class="btn btn-input btn-operation">Determinante</button>
+                <button class="btn btn-input btn-operation btn-sumar" onclick="sumar()">Sumar</button>
+                <button class="btn btn-input btn-operation btn-restar" onclick="restar()">Restar</button>
+                <button class="btn btn-input btn-operation btn-multiplicar" onclick="multiplicar()">Multiplicar</button>
+                <button class="btn btn-input btn-operation btn-determinante" onclick="determinante()">Determinante</button>
+                <button class="btn btn-input btn-operation btn-trasponer" onclick="transponer()">Transponer</button>
+                <button class="btn btn-input btn-operation btn-inversa" onclick="inversa()">Inversa</button>
+                <button class="btn btn-input btn-operation btn-identidad" onclick="identidad()">Identidad</button>
+                <button class="btn btn-input btn-operation btn-escalar" onclick="escalar()">Escalar</button>
                 <button class="btn btn-input btn-clear" onclick="clearMatriz()">Limpiar</button>
-                <button class="btn btn-input btn-calc">Calcular</button>
             </div>
             
         </div>
@@ -72,15 +78,15 @@
             <div class="output-medium-container medium-container" id="matriz-r">
                 <h3 class="title-matriz-r title-matriz">Matriz Resultante</h3>
                 <form class="form-output-container form-container" id="form-r">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
-                    <input type="number" class="output-cell cell">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
+                    <input type="number" class="output-cell cell" max="2">
                 </form>
             </div>
 

@@ -3,11 +3,10 @@
 .btn {
   display: inline-block;
   height: 1vw;
-  width: 7vw;
+  width: 8vw;
   padding: 1vw 0 2vw 0;
 
   font-size: 0.7vw;
-  font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
   font-weight: bold;
   border-radius: 0.5vw;
@@ -28,7 +27,7 @@
 }
 
 .btn-change {
-  width: 4vw;
+  width: 7vw;
   padding: 0.2vw 0.5vw;
   border-radius: 0.3vw;
 
@@ -37,8 +36,7 @@
   right: 1vw;
 
   text-align: center;
-  font-size: 0.8rem;
-  font-family: "Roboto Mono", serif;
+  font-size: 0.9vw;
   font-weight: bold;
 
   border: 2px solid var(--color-blue);
@@ -46,16 +44,26 @@
   transition: all 0.5s ease;
 }
 
-.btn-clear:hover{
+.btn-clear{
   background-color: var(--color-red);
   border: 2px solid var(--color-border-red);
   color: var(--color-white);
 }
 
-.btn-operation:hover{
-  background-color: #088886;
-  border: 2px solid #066b69;
+.btn-sumar, .btn-identidad, .btn-trasponer, .btn-multiplicar{
+  background-color: var(--color-yellow);
   color: var(--color-white);
+}
+
+.btn-restar, .btn-inversa, .btn-determinante, .btn-escalar{
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+.btn-clear:hover{
+  background-color: var(--color-white);
+  border: 2px solid var(--color-border-red);
+  color: var(--color-red);
 }
 
 .btn-calc:hover{
@@ -69,3 +77,16 @@
   color: var(--color-blue);
   transition: all 0.5s ease-in-out;
 }
+
+.btn-sumar:hover, .btn-identidad:hover, .btn-trasponer:hover, .btn-multiplicar:hover{
+  background-color: var(--color-white);
+  color: var(--color-yellow);
+  border-color: var(--color-border-yellow);
+}
+
+.btn-restar:hover, .btn-inversa:hover, .btn-determinante:hover, .btn-escalar:hover{
+  color: var(--color-green);
+  border-color: var(--color-border-green);
+  background-color: var(--color-white);
+}
+

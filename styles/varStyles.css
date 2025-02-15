@@ -1,10 +1,13 @@
 :root{
-    --color-blue: #283779;
-    --color-white: #FFF;
+    --color-blue: #4B0082;
+    --color-gray: #e8e8e8;
+    --color-white:#FFF;
     --color-yellow: #FFB74B;
     --color-black: #000;
     --color-red: #D10257;
+    --color-green: #3cbf3e;
     --color-border-red: #93023e;
     --color-border-yellow: #d89c41;
-    --color-border-blue: #1d2857;
+    --color-border-blue: #6902b2;
+    --color-border-green:#039706;
 }

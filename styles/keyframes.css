@@ -32,4 +32,37 @@
     }
 }
 
+@keyframes icon {
+    0% {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+      color: var(--color-yellow);
+      text-shadow: 0 0 10px var(--color-yellow);
+    }
+    25% {
+      transform: rotate(10deg) scale(1.2);
+      opacity: 0.8;
+      color: var(--color-red);
+      text-shadow: 0 0 20px var(--color-red);
+    }
+    50% {
+      transform: rotate(-10deg) scale(1.2);
+      opacity: 0.8;
+      color: var(--color-blue);
+      text-shadow: 0 0 20px var(--color-blue);
+    }
+    75% {
+      transform: rotate(10deg) scale(1.2);
+      opacity: 0.8;
+      color: var(--color-green);
+      text-shadow: 0 0 20px var(--color-green);
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+      color: var(--color-yellow);
+      text-shadow: 0 0 10px var(--color-yellow);
+    }
+  }
+
 

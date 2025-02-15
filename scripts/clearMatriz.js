@@ -13,7 +13,7 @@ const clearMatrizR = () => {
     m_r.offsetHeight;
     m_r.style.animationName = "clear-slide";
     m_r.style.animationDuration = "1s";
-    m_r.style.animationDelay = "ease-in-out";
+    m_r.style.animationTimingFunction = "ease-in-out";
 };
 
 const clearMatriz = () => {
@@ -23,12 +23,30 @@ const clearMatriz = () => {
 
     const n_i_a = m_a.querySelectorAll('input[type="number"]');
     const n_i_b = m_b.querySelectorAll('input[type="number"]');
-    
-    n_i_a.forEach(input => {
-        input.value = '';
-    });
 
-    n_i_b.forEach(input => {
-        input.value = '';
-    });
+    if(m_a.classList.contains('flex-active')){
+
+        n_i_a.forEach(input => {
+            input.value = '';
+        });
+
+        m_a.style.animationName = "none";
+        m_a.offsetHeight;
+        m_a.style.animationName = "clear-slide";
+        m_a.style.animationDuration = "1s";
+        m_a.style.animationTimingFunction = "ease-in-out";
+    }
+    else if(m_b.classList.contains('flex-active')){
+
+        n_i_b.forEach(input => {
+            input.value = '';
+        });
+    
+        m_b.style.animationName = "none";
+        m_b.offsetHeight;
+        m_b.style.animationName = "clear-slide";
+        m_b.style.animationDuration = "1s";
+        m_b.style.animationTimingFunction = "ease-in-out";
+    }
+
 }
