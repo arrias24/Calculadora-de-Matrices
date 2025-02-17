@@ -642,10 +642,6 @@ const determinante = () => {
             function calcularDeterminante(matriz) {
                 const n = matriz.length;
         
-                if (n === 1) {
-                    return matriz[0][0];
-                }
-        
                 if (n === 2) {
                     return matriz[0][0] * matriz[1][1] - matriz[0][1] * matriz[1][0];
                 }

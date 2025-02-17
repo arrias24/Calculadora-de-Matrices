@@ -11,7 +11,7 @@
     font-size: 0.9vw;
     font-weight: bold;
   
-    border: 1px solid var(--color-blue);
+    border: 1px solid var(--color-morado);
   }
   
   .input-matriz {
@@ -43,11 +43,11 @@
   
 
   .input-cell[type="number"], .input-cell::placeholder{
-    border: 1px solid var(--color-black);
+    border: .2vw solid var(--color-black);
   }
 
 
   .output-cell[type="number"], .output-cell::placeholder {
-    border: 2px solid var(--color-blue);
+    border: .2vw solid var(--color-morado);
   }
 

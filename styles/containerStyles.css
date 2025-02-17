@@ -48,13 +48,13 @@
 }
 
 .input-medium-container {
-    background-color: var(--color-blue);
-    border: 2px solid var(--color-blue);
+    background-color: var(--color-morado);
+    border: 2px solid var(--color-morado);
 }
 
 .output-medium-container {
     background-color: var(--color-gray);
-    border: 2px solid var(--color-blue);
+    border: 2px solid var(--color-morado);
 }
 
 .calc-input-container {
@@ -63,7 +63,7 @@
 
 
 .calc-output-container {
-    background-color: var(--color-blue);
+    background-color: var(--color-morado);
   }
 
 .flex-active{

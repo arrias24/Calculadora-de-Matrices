@@ -16,13 +16,13 @@
 }
 
 .btn-input {
-  border: 2px solid var(--color-blue);
+  border: .2vw solid var(--color-blue);
   background-color: var(--color-white);
   transition: all 1s ease;
 }
 
 .btn-output {
-  border: 2px solid var(--color-blue);
+  border: 2px solid var(--color-morado);
   background-color: var(--color-white);
 }
 
@@ -39,30 +39,26 @@
   font-size: 0.9vw;
   font-weight: bold;
 
-  border: 2px solid var(--color-blue);
+  border: 2px solid var(--color-morado);
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .btn-clear{
   background-color: var(--color-red);
-  border: 2px solid var(--color-border-red);
+  border: .2vw solid var(--color-border-red);
   color: var(--color-white);
 }
 
-.btn-sumar, .btn-identidad, .btn-trasponer, .btn-multiplicar{
-  background-color: var(--color-yellow);
-  color: var(--color-white);
-}
-
-.btn-restar, .btn-inversa, .btn-determinante, .btn-escalar{
-  color: var(--color-white);
-  background-color: var(--color-green);
+.btn-sumar, .btn-identidad, .btn-trasponer, .btn-multiplicar,.btn-restar, .btn-inversa, .btn-determinante, .btn-escalar{
+  background-color: var(--color-white);
+  color: var(--color-morado);
+  border-color: var(--color-border-morado);
 }
 
 .btn-clear:hover{
   background-color: var(--color-white);
-  border: 2px solid var(--color-border-red);
+  border: .2vw solid var(--color-border-red);
   color: var(--color-red);
 }
 
@@ -74,19 +70,19 @@
 
 .btn-change:hover {
   border-color: var(--color-white);
-  color: var(--color-blue);
+  color: var(--color-morado);
   transition: all 0.5s ease-in-out;
 }
 
-.btn-sumar:hover, .btn-identidad:hover, .btn-trasponer:hover, .btn-multiplicar:hover{
-  background-color: var(--color-white);
-  color: var(--color-yellow);
+.btn-identidad:hover, .btn-sumar:hover,.btn-restar:hover, .btn-multiplicar:hover, .btn-escalar:hover{
+  background-color: var(--color-yellow);
+  color: var(--color-white);
   border-color: var(--color-border-yellow);
 }
 
-.btn-restar:hover, .btn-inversa:hover, .btn-determinante:hover, .btn-escalar:hover{
-  color: var(--color-green);
+.btn-trasponer:hover, .btn-inversa:hover, .btn-determinante:hover {
+  color: var(--color-white);
   border-color: var(--color-border-green);
-  background-color: var(--color-white);
+  background-color: var(--color-green);
 }
 

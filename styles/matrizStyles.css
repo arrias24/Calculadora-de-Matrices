@@ -3,9 +3,9 @@
 
 
 .m-a{
-    background: linear-gradient(var(--color-border-blue), var(--color-blue));
+    background: linear-gradient(var(--color-border-morado), var(--color-morado));
 }
 
 .m-b{
-    background: linear-gradient(var(--color-blue), var(--color-border-blue));
+    background: linear-gradient(var(--color-morado), var(--color-border-morado));
 }

@@ -1,5 +1,6 @@
 :root{
-    --color-blue: #4B0082;
+    --color-morado: #4B0082;
+    --color-blue: #013d97;
     --color-gray: #e8e8e8;
     --color-white:#FFF;
     --color-yellow: #FFB74B;
@@ -8,6 +9,7 @@
     --color-green: #3cbf3e;
     --color-border-red: #93023e;
     --color-border-yellow: #d89c41;
-    --color-border-blue: #6902b2;
+    --color-border-morado: #6902b2;
+    --color-border-blue: #010959;
     --color-border-green:#039706;
 }
